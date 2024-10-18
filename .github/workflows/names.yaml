@@ -1,0 +1,14 @@
+name: Names
+on:
+    push
+jobs:
+    idle:
+        name: Idle job doing only prints
+        runs-on: ubuntu-latest
+        steps:
+            -
+                name: step One-Two
+                run: |
+                    echo Idle Step
+                    sleep 20
+                    echo waking up
